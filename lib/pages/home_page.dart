@@ -25,6 +25,7 @@ class _HomePageState extends State<HomePage> {
         index: currentPage,
       ),
       bottomNavigationBar: BottomNavigationBar(
+          fixedColor: Color.fromRGBO(185, 184, 184, 1),
           iconSize: 35,
           selectedFontSize: 0,
           unselectedFontSize: 0,
@@ -36,11 +37,17 @@ class _HomePageState extends State<HomePage> {
           },
           items: const [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(
+                Icons.home,
+                color: Colors.black,
+              ),
               label: '',
             ),
             BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.bag_fill),
+              icon: Icon(
+                CupertinoIcons.bag_fill,
+                color: Colors.black,
+              ),
               label: '',
             ),
           ]),
